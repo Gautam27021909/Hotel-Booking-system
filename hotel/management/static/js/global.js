@@ -1,9 +1,6 @@
 (function ($) {
     'use strict';
-    /*==================================================================
-        [ Daterangepicker ]*/
-    
-    
+
     try {
     
         $('#input-start').daterangepicker({
@@ -18,9 +15,7 @@
     
     
     } catch(er) {console.log(er);}
-    /*==================================================================
-        [ Input Number ]*/
-    
+
     try {
     
         var inputCon = $('.js-number-input');

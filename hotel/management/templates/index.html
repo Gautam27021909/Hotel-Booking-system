@@ -12,13 +12,12 @@
       <meta name="author" content="">
       <link rel="icon" href="{%static "images/fevicon.png"%}" type="image/gif" />
       <link href= {%static "bootstrap.min.css" %} rel="stylesheet">
-      <link href= {%static "sdaterangepicker.css" %} rel="stylesheet">
+      <link href= {%static "daterangepicker.css" %} rel="stylesheet">
       <link href= {%static "owl.carousel.min.css" %} rel="stylesheet">
       <link href= {%static "nice-select.css" %} rel="stylesheet">
       <link href= {%static "animate.css" %} rel="stylesheet">
       <link href= {%static "style.css" %} rel="stylesheet">
       <link href= {%static "responsive.css" %} rel="stylesheet">
-      <link href= {%static "custom.css" %} rel="stylesheet">
    
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
    
@@ -29,7 +28,7 @@
             <div class="row">
                <div class="col-lg-2">
                   <div class="full logo_section">
-                     <a class="logo_main" href={% url "error" %}><img src= "{%static "images/logo.png"%}" alt="#" /></a>
+                     <a class="logo_main" href={% url "index" %}><img src= "{%static "images/logo.png"%}" alt="#" /></a>
                     
                   </div>
                </div>
@@ -50,7 +49,7 @@
                                  <a class="nav-link" href={% url "index" %}>Home</a>                                
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href={% url "error" %}>About</a>
+                                 <a class="nav-link" href={% url "about" %}>About</a>
                               </li>
                               
                               <li class="nav-item">
@@ -467,7 +466,7 @@
                            <h4 class="reveal fw_700 wow margin-top_5">Special Rooms</h4>
                         </div>
                         <div class="full margin-top_3">
-                           <p class="text-align_justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum..</p>
+                           <p class="text-align_justify">These special rooms include connecting rooms, which have individual doors connecting them without the need to access the hallway, cabana rooms with direct access to a swimming pool, accessible rooms designed for guests with disabilities, and villas that provide extra privacy and luxury amenities private balconies.</p>
                         </div>
                         <div class="full margin-top_3 small_read_more">
                            <p class="large_2 price_tag float-left"><span class="fw_700 theme_color">$400</span><br><span>Per Night</span></p>
@@ -494,7 +493,7 @@
                            <h4 class="reveal fw_700 wow margin-top_5">Single Room</h4>
                         </div>
                         <div class="full margin-top_3">
-                           <p class="text-align_justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum..</p>
+                           <p class="text-align_justify">Single rooms in hotels are designed for single occupancy, offering guests a comfortable and cost-effective accommodation option. These rooms typically feature basic amenities like a television, telephone, coffee maker, writing desk, private bathroom, and closets.</p>
                         </div>
                         <div class="full margin-top_3 small_read_more">
                            <p class="large_2 price_tag float-left"><span class="fw_700 theme_color">$200</span><br><span>Per Night</span></p>
@@ -506,33 +505,7 @@
             </div>
          </div>
       </section>
-      <section id="rooms_section3" class="section margin-top_5">
-         <div class="large_container white_bg padding-top_9 padding-bottom_9">
-            <div class="row">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div class="full">
-                           <img class="img-responsive" src="{%static "images/rm1.jpg"%}" alt="#" />
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="full">
-                           <h4 class="reveal fw_700 wow margin-top_5">Special Rooms</h4>
-                        </div>
-                        <div class="full margin-top_3">
-                           <p class="text-align_justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum..</p>
-                        </div>
-                        <div class="full margin-top_3 small_read_more">
-                           <p class="large_2 price_tag float-left"><span class="fw_700 theme_color">$300</span><br><span>Per Night</span></p>
-                           <a class="main_btn float-right margin-top_05" href={% url "error" %}>Read More</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+    
       <section class="section margin-top_5">
          <div class="container">
             <div class="row">
@@ -591,9 +564,6 @@
                         <div class="full">
                            <h2 class="reveal fw_700 wow">Customers says</h2>
                         </div>
-                        <div class="full margin-top_2">
-                           <p>There are many variations of passages of Lorem Ipsum..</p>
-                        </div>
                      </div>
                   </div>
                   <div class="row">
@@ -609,11 +579,11 @@
                                           <img src="{%static "images/testi_pr.jpg"%}" alt="#" />
                                           <div class="name_info">
                                              <h5>Denilio</h5>
-                                             <p>Property</p>
+                                             <p>Wade</p>
                                           </div>
                                        </div>
                                        <div class="full text_testimonial">
-                                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt..</p>
+                                          <p>By allowing guests to input their own details, there are fewer chances of mistakes being made by hotel staff. The system also automatically updates room inventory to prevent overbookings. Guests can book rooms anytime, not just during business hours, increasing the hotel's ability to capture bookings.</p>
                                           <p class="double_qouma text-align_center"><img src="{%static "images/double_qauma.png"%}" alt="#" /></p>
                                        </div>
                                     </div>
@@ -623,14 +593,14 @@
                                     </div>
                                     <div class="testimonial_blog_bottom">
                                        <div class="full profile_testimonial">
-                                          <img src="{%static "images/testi_pr.jpg"%}" alt="#" />
+                                          <img src="{%static "images/testi_pr2.jpg"%}" alt="#" />
                                           <div class="name_info">
-                                             <h5>Denilio</h5>
-                                             <p>Property</p>
+                                             <h5>Laura</h5>
+                                             <p>Scott</p>
                                           </div>
                                        </div>
                                        <div class="full text_testimonial">
-                                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt..</p>
+                                          <p>A hotel reservation system automates many manual processes, such as managing room availability, rates, and reservations. This frees up staff to focus on other tasks and improve customer service. Guests can easily book rooms online in real-time, view availability, select room types, and make payments all in one place. This provides a more convenient and user-friendly booking experience.</p>
                                           <p class="double_qouma text-align_center"><img src="{%static "images/double_qauma.png"%}" alt="#" /></p>
                                        </div>
                                     </div>
@@ -640,14 +610,14 @@
                                     </div>
                                     <div class="testimonial_blog_bottom">
                                        <div class="full profile_testimonial">
-                                          <img src="{%static "images/testi_pr.jpg"%}" alt="#" />
+                                          <img src="{%static "images/testi_pr3.jpg"%}" alt="#" />
                                           <div class="name_info">
-                                             <h5>Denilio</h5>
-                                             <p>Property</p>
+                                             <h5>Sophia</h5>
+                                             <p>Salva</p>
                                           </div>
                                        </div>
                                        <div class="full text_testimonial">
-                                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt..</p>
+                                          <p>hotel reservation system provides a range of benefits that improve operational efficiency, the guest experience, and the hotel's bottom line. The search results indicate these systems are essential for hotels to remain competitive in the modern hospitality industry. staff can lead to significant cost savings for hotels.</p>
                                           <p class="double_qouma text-align_center"><img src="{%static "images/double_qauma.png"%}" alt="#" /></p>
                                        </div>
                                     </div>
@@ -676,9 +646,7 @@
                   <div class="full">
                      <h4 class="reveal fw_700 wow">Subscribe Our Newsletter</h4>
                   </div>
-                  <div class="full margin-top_1">
-                     <p class="light_grey_color">Use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text..</p>
-                  </div>
+                
                </div>
             </div>
             <div class="row">
@@ -779,7 +747,6 @@
          </div>
       </footer>
 
-      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
       <script src="{% static "js/jquery.min.js" %}"></script>
       <script src="{% static "js/bootstrap.min.js" %}"></script>
       <script src="{% static "js/owl.carousel.js" %}"></script>

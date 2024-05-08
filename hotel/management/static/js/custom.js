@@ -1,35 +1,13 @@
-/******************************************
-    File Name: custom.js
-    Template Name: Pride_door - Responsive HTML5 Theme 
-    Created By: htmldotdesign
-    Envato Profile: https://themeforest.net/user/htmldotdesign
-    Website: https://html.design
-    Version: 1.0
-******************************************/
-
 (function($) {
-    "use strict";
 
-/**-- loader js --**/
 
-$("body").prepend('<div id="preloader"><div id="status"><img src="images/loading_1.gif" alt="#" /></div></div>');
-$(window).on('load', function() { // makes sure the whole site is loaded 
-    $('#status').fadeOut(); // will first fade out the loading animation 
-    $('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-    $('body').delay(250).css({
-        'overflow': 'visible'
-    });
-})
 
-/**-- select js --**/
 
 $('select').niceSelect();
 
-/**-- wow js --**/
 
 new WOW().init();
 
-/** search bar **/
 
 $(function(){
 $('.search_btn').on('click',function(){
@@ -39,7 +17,6 @@ $(".search_open, .search_close").toggleClass("search_open search_close");
 });
 });
 
-/** accordion js **/
 
  $("#accordion, #accordion_2").on("hide.bs.collapse show.bs.collapse", e => {
   $(e.target)
@@ -52,7 +29,6 @@ $(".search_open, .search_close").toggleClass("search_open search_close");
 })(jQuery);
 
 
- /**== google map js ==**/
         function myMap() {
             var mapProp = {
                 center: new google.maps.LatLng(40.712775, -74.005973),
@@ -165,6 +141,5 @@ $(".search_open, .search_close").toggleClass("search_open search_close");
             };
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
         }
-        /**== end google map js ==**/
 
         
