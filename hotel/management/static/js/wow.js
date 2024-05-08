@@ -1,7 +1,3 @@
-/*****************************************************
-    File Name: wow.js
-    Template Name: Pride_door - Responsive HTML5 Theme 
-*****************************************************/
 
 (function (global, factory) {
     if (typeof define === "function" && define.amd) {

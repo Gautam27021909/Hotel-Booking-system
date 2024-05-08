@@ -1,9 +1,3 @@
-/*------------------------------------------------------------------
-    File Name: responsive.css
--------------------------------------------------------------------*/
-
-/**-- large screen --**/ 
-
 @media (min-width: 1601px) and (max-width: 1850px) {
 
     .full.banner_cont {
@@ -498,10 +492,6 @@
             margin: 0;
     }
     
-    .search_container {
-        margin: 3px 0;
-    }
-    
     .search_btn {
         height: 30px;
         width: 30px;
@@ -764,7 +754,7 @@
         padding: 12px 15px;
     }
     
-    .home_3 .header_bottom .menu_section .search_container {
+    .home_3 .header_bottom .menu_section {
         display: none;
     }
     
