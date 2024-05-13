@@ -5,11 +5,9 @@
 
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   
-      <title>About us</title>
+      <title>Hotel Booking</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -21,36 +19,33 @@
       <link href= {%static "animate.css" %} rel="stylesheet">
       <link href= {%static "style.css" %} rel="stylesheet">
       <link href= {%static "responsive.css" %} rel="stylesheet">
-   
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
    </head>
-   <body id="default_theme" class="inner_page about_page">
+   <body id="default_theme" class="inner_page contact_page">
       <header id="main_header" class="header">
          <div class="container-fluid">
             <div class="row">
                <div class="col-lg-2">
                   <div class="full logo_section">
-                     <a class="logo_main" href={% url "index" %}><img src="{%static "images/logo.png"%}" alt="#" /></a>
-                     
+                     <a class="logo_main" href="index.html"><img src="{%static "images/logo.png"%}" alt="#" /></a>
+                     <div class="float-right d-lg-none">
+                        <ul class="login_section">
+                           <li><a href="login.html">Login</a></li>
+                           <li><a href="sign_up.html">Sign up</a></li>
+                        </ul>
+                        
+                     </div>
                   </div>
                </div>
                <div class="col-lg-7">
                   <div class="full menu_section">
                      <nav class="navbar navbar-expand-lg navbar-light">
-                        <div class="button_menu_section d-lg-none">
-                           <a class="navbar-brand" href="#">Menu</a>
-                           <button id="nav-icon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                           </button>
-                        </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item">
+                              <li class="nav-item ">
                                  <a class="nav-link" href={% url "index" %}>Home</a>                                
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href={% url "about" %}>About</a>
                               </li>
                               
@@ -61,7 +56,7 @@
                               <li class="nav-item">
                                  <a class="nav-link" href={% url "error" %}>Rooms</a>
                               </li>
-                              <li class="nav-item dropdown">
+                              <li class="nav-item active">
                                  <a class="nav-link" href={% url "contact" %}>Contact</a>
                               </li>
                            </ul>
@@ -75,73 +70,105 @@
                         <li><a href="login.html">Login</a></li>
                         <li><a href="sign_up.html">Sign up</a></li>
                      </ul>
-                     
-                  </div>
+                    
                </div>
             </div>
          </div>
       </header>
-      <section id="inner_banner" class="banner">
+      <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6174.948637035118!2d72.65310390377265!3d23.036750900659786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1713183776051!5m2!1sen!2sin" frameborder="0" style="min-height: 500px; border:0;" allowfullscreen="" aria-hidden="false"tabindex="0"></iframe>
+      <section id="contact" class="section padding-top_9 padding-bottom_9 white_bg">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="full">
-                     <h2>About us</h2>
-                  </div>
-                  <div class="full breadcrumb">
-                     <ul>
-                        <li><a href={% url "index" %}>Home</a></li>
-                        <li><i class="fa fa-angle-double-right"></i></li>
-                        <li>About us</li>
-                     </ul>
+               <div class="col-lg-12">
+                  <div class="full center">
+                     <h4 class="reveal fw_800 wow">Contact <span class="theme_color">us</span></h4>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <section id="about_section" class="section margin-top_9">
-         <div class="large_container white_bg padding-top_9 padding-bottom_9">
-            <div class="row">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div class="full">
-                           <h4 class="reveal fw_700 wow margin-top_5">Hotel Pride Door</h4>
-                        </div>
-                        <div class="full margin-top_3">
-                           <p>Hotel Pride Door facilities encompass a wide range of amenities and services designed to enhance the guest experience and cater to their diverse needs during their stay. These facilities typically include accommodation options such as standard rooms, suites, and specialty rooms like family rooms or executive suites, each offering varying levels of comfort and luxury to accommodate different guest preferences and budgets. Common facilities found in hotels include restaurants, bars, cafes, and room service options that provide guests with a variety of dining choices and culinary experiences. Additionally, hotels often feature fitness centers, swimming pools, spas, and wellness facilities to promote relaxation, health, and well-being among guests.</p>
-                        </div>
+            <div class="row margin-top_5">
+               <div class="col-md-4">
+                  <div class="full contact_info margin-top_1">
+                     <div class="full icon center margin-top_3">
+                        <svg width="50px" fill="#71a4b9" version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+                           <path class="st0" d="M130.4,91.7c-4.9-0.6-9.8-1.6-14.5-3c-5.9-1.8-12.3-0.2-16.6,4.1l-9,9C73,92.4,58.6,78,49.2,60.7l9-9
+                              c4.3-4.3,5.9-10.7,4.1-16.6c-1.4-4.7-2.5-9.6-3-14.5C58.4,12.3,51.3,6,42.8,6H20.6C16,6,11.5,8,8.4,11.4c-2.8,3.1-4.3,7.1-4.3,11.2
+                              c0,0.5,0,1,0.1,1.5c1.5,15.9,5.7,31.3,12.6,45.8c6.7,14,15.7,26.7,26.7,37.7c11,11,23.7,20,37.7,26.7c14.4,6.9,29.8,11.1,45.8,12.6
+                              c4.6,0.4,9.3-1.1,12.7-4.3c3.4-3.1,5.4-7.6,5.4-12.2v-22.2C145,99.7,138.7,92.6,130.4,91.7z"/>
+                        </svg>
                      </div>
-                     <div class="col-lg-6">  
-                        <div class="full">
-                           <img class="r-img wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" src="{%static "images/about_us.jpg"%}" alt="#" />
-                        </div>
+                     <div class="full">
+                        <h6 class="fw_700 text-align_center full margin-top_3">Phone</h6>
+                     </div>
+                     <div class="full text-align_center margin-top_1">
+                        <p>+91 9876 543 210</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="full contact_info active">
+                     <div class="full icon text-align_center center margin-top_3">
+                        <svg width="50px" fill="#fff" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+                           <path class="st0" d="M76,6.5c-30.3,0-54.9,24.6-54.9,54.9c0,21.6,9.1,43.5,26.2,63.3c12.8,14.8,25.5,23.1,26,23.5
+                              c0.8,0.5,1.8,0.8,2.7,0.8c0.9,0,1.9-0.3,2.7-0.8c0.5-0.3,13.2-8.7,26-23.5c17.1-19.8,26.2-41.6,26.2-63.3
+                              C130.9,31.2,106.3,6.5,76,6.5z M76,81.8c-11.6,0-21.1-9.4-21.1-21.1S64.4,39.6,76,39.6s21.1,9.4,21.1,21.1S87.7,81.8,76,81.8z"/>
+                        </svg>
+                     </div>
+                     <div class="full">
+                        <h6 class="fw_700 text-align_center full margin-top_3">Address</h6>
+                     </div>
+                     <div class="full text-align_center margin-top_2">
+                        <p>427 Schoen Circles Suite 124<br>Melbourne Australia</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="full contact_info">
+                     <div class="full icon text-align_center center margin-top_3">
+                        <svg width="50px" fill="#71a4b9" version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+                           <polygon class="st0" points="149,125 149,35.8 98.9,79.5  "/>
+                           <path class="st0" d="M2.1,34c0,0.1,0,0.1,0,0.1v90.2l50.1-45.4L2.1,34z"/>
+                           <path class="st0" d="M84.7,81.2l59.7-52c-0.1,0-0.2-0.1-0.4-0.1H8.7l57.9,51.9C71.7,85.7,79.5,85.7,84.7,81.2z"/>
+                           <path class="st0" d="M90,87.3c-4.1,3.6-9.2,5.3-14.3,5.3c-5.2,0-10.4-1.9-14.5-5.6l-3-2.7L6.5,131.2c0.2,0,0.3,0.1,0.5,0.1h136.8
+                              L92.8,84.9L90,87.3z"/>
+                        </svg>
+                     </div>
+                     <div class="full">
+                        <h6 class="fw_700 text-align_center full margin-top_3">Email</h6>
+                     </div>
+                     <div class="full text-align_center margin-top_1">
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a2e2f27250a2d272b232664292527">[email&#160;protected]</a></p>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <section class="section padding-top_9 padding-bottom_9">
-         <div class="container">
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-lg-10 offset-lg-1">
                   <div class="full">
-                     <img class="img-responsive wow fadeInLeft" src="{%static "images/about_2.jpg"%}" data-wow-delay="0.5s" data-wow-duration="1.5s" alt="#" />
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="full">
-                     <h4 class="reveal fw_700 wow margin-top_5">Clean and Best Parking</h4>
-                  </div>
-                  <div class="full margin-top_4">
-                     <p>&emsp;Hotels that prioritize clean and top-notch parking facilities understand the importance of providing a seamless and secure experience for guests arriving by car. These establishments go above and beyond to ensure their parking areas are well-maintained, safe, and convenient, reflecting their commitment to guest satisfaction and overall quality of service. Cleanliness is a key focus, with regular cleaning schedules, litter removal, and maintenance of parking spaces to create a welcoming environment for guests. Lighting is another crucial aspect, with well-lit parking lots and pathways enhancing safety and visibility, especially during evening arrivals.</p> <br>
-                     <p>&emsp;Clear signage, designated parking spots for different types of vehicles, and accessible parking for guests with disabilities demonstrate a hotel's attention to detail and commitment to providing a hassle-free parking experience. Some hotels may offer covered parking or reserved parking for VIP guests, adding an extra layer of exclusivity and convenience.</p>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <div class="full center margin-top_5">
-                     <a class="main_btn" href=" ">Book Now</a>
+                     <form action="index.html" class="contact_form margin-top_7">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <input type="text" name="name" placeholder="Name" required="" />
+                           </div>
+                           <div class="col-lg-6">
+                              <input type="text" name="phone_no" placeholder="Phone" required="" />
+                           </div>
+                           <div class="col-lg-6">
+                              <input type="email" name="email" placeholder="Email" required="" />
+                           </div>
+                           <div class="col-lg-12">
+                              <textarea placeholder="Message" required=""></textarea>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="full center">
+                                 <button class="main_btn">Send</button>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
@@ -154,6 +181,7 @@
                   <div class="full">
                      <h4 class="reveal fw_700 wow">Subscribe Our Newsletter</h4>
                   </div>
+                 
                </div>
             </div>
             <div class="row">
@@ -263,6 +291,8 @@
             </div>
          </div>
       </footer>
+    
+      
       <script src="{% static "js/jquery.min.js" %}"></script>
       <script src="{% static "js/bootstrap.min.js" %}"></script>
       <script src="{% static "js/owl.carousel.js" %}"></script>
@@ -272,5 +302,6 @@
       <script src="{% static "js/jquery.nice-select.min.js" %}"></script>
       <script src="{% static "js/wow.js" %}"></script>
       <script src="{% static "js/custom.js" %}"></script>
+      <script src="https://www.google.com/maps/place/India/@21.0680074,82.7525294,5z/data=!3m1!4b1!4m6!3m5!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288!16zL20vMDNyazA?entry=ttu"></script>
    </body>
 </html>
