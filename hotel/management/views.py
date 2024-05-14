@@ -12,3 +12,5 @@ def contact(request):
     return render(request, "contact.html")
 def tc(request):
     return render(request,"tc.html")
+def room(request):
+    return render(request,"rooms.html")
