@@ -35,7 +35,9 @@
                               <h4 class="reveal fw_700 wow">Sign up</h4>
                            </div>
                            <div class="full margin-top_1">
-                              <form action={% url "index" %} class="login_form login_signup">
+                              
+                              <form action="" class="login_form login_signup" method = "post">
+                                 {% csrf_token %}
                                  <fieldset>
                                     <div class="full">
                                        <div class="full field margin-top_2">
