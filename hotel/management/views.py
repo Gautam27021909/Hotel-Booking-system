@@ -15,5 +15,6 @@ def tc(request):
 def room(request):
     return render(request,"rooms.html")
 def login(request):
-    
     return render(request,"login.html")
+def signup(request):
+    return render(request,"sign_up.html")

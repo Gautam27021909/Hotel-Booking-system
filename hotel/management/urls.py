@@ -11,4 +11,5 @@ urlpatterns = [
     path("term/", views.tc, name="tc"),
     path("room/", views.room, name="room"),
     path("login/", views.login, name="login"),
+    path("signup/", views.signup, name="signup"),
 ]
