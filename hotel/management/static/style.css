@@ -2647,7 +2647,7 @@ p svg {
 .login_signup input {
      width: calc(100% - 50px);
      border: solid #87b0c4 1px;
-     height: 60px;
+     height: 40px;
      margin-bottom: 0;
      padding: 10px 20px;
      color: #555;
