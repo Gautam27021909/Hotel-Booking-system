@@ -1,5 +1,6 @@
 from django.shortcuts import render , redirect
 from .models import Sign_up
+from django.contrib import messages
 
 def index(request):
     return render( request,"index.html")
@@ -32,6 +33,15 @@ def signup(request):
         email = request.POST["email"]
         password = request.POST["password"]
         confirm_password = request.POST["confirm_password"]
-        Data = Sign_up(name=name,Phone_Number=Phone_Number,email=email,password=password,confirm_password=confirm_password)
+        username = request.POST["username"]
+        
+        if Sign_up.objects.filter(username=username).exists():
+            messages.error(request,"Username is taken")
+            return redirect("signup")
+        if password != confirm_password:
+            messages.error(request,"Password does not match")
+            return redirect("signup")
+        
+        Data = Sign_up(name=name,Phone_Number=Phone_Number,email=email,password=password,confirm_password=confirm_password,username=username)
         Data.save()
     return render(request,"sign_up.html")
