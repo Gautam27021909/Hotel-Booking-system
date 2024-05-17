@@ -6,3 +6,4 @@ class Sign_up(models.Model):
     email = models.EmailField(max_length=100)
     password = models.CharField(max_length=100)
     confirm_password = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, default="")
