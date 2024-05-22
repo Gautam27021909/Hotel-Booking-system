@@ -44,7 +44,7 @@ def signup(request):
         
         Data = Sign_up(name=name,Phone_Number=Phone_Number,email=email,password=password,confirm_password=confirm_password,username=username)
         Data.save()
-    return render(request,"sign_up.html")\
+    return render(request,"sign_up.html")
         
 def forgot(request):
     return render(request,"forgot.html")

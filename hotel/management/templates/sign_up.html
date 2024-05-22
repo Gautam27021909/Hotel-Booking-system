@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <title>Create an Account</title>
+      <title>STAY HUB | Create an Account</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -18,7 +18,6 @@
       <link href= {%static "animate.css" %} rel="stylesheet">
       <link href= {%static "style.css" %} rel="stylesheet">
       <link href= {%static "responsive.css" %} rel="stylesheet">
-   
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
    </head>
@@ -36,12 +35,12 @@
                            </div>
                            <div class="full margin-top_1">
                               {% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
-    {% endfor %} 
-</ul>
-{% endif %}
+                                 <ul class="messages">
+                                    {% for message in messages %}
+                                    <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                                    {% endfor %} 
+                                 </ul>
+                              {% endif %}
                               
                               <form action="" class="login_form login_signup" method = "post">
                                  {% csrf_token %}
