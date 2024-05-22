@@ -2,14 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Pride Door - Responsive Html5 Theme</title>
+      <title>Forgot Password</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -26,7 +23,6 @@
       
    </head>
    <body id="default_theme" class="inner_page forgot_page">
-      <!-- section -->
       <section class="full bg_login_signup">
          <div class="container">
             <div class="row">
@@ -38,7 +34,7 @@
                               <h4 class="reveal fw_700 wow">Forgot Password</h4>
                            </div>
                            <div class="full margin-top_1">
-                              <form action="set_password.html" class="login_form login_signup">
+                              <form action={% url "setpassword"%} class="login_form login_signup">
                                  <fieldset>
                                     <div class="full">
                                        <div class="full field margin-top_2">
@@ -63,9 +59,6 @@
             </div>
          </div>
       </section>
-      <!-- end section -->
-      
-      <!-- js section -->
       <script src="{% static "js/jquery.min.js" %}"></script>
       <script src="{% static "js/bootstrap.min.js" %}"></script>
       <script src="{% static "js/owl.carousel.js" %}"></script>
