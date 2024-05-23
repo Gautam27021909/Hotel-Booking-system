@@ -24,6 +24,12 @@ def room(request):
     return render(request,"rooms.html")
 
 def login(request):
+    # if request.method == "POST":
+    #     username = request.POST["username"]
+    #     if Sign_up.objects.filter(username=username).exists():
+    #         messages.info("Username is already taken")
+    #         return redirect("login")
+    #     return redirect("index")
     return render(request,"login.html")
 
 def signup(request):
