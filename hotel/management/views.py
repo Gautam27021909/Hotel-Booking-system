@@ -63,3 +63,6 @@ def forgot(request):
 
 def setpassword(request):
     return render(request,"set_password.html")
+
+def roomdetails(request):
+    return render(request,"room_details.html")
