@@ -33,12 +33,21 @@
                               <h4 class="reveal fw_700 wow">Login</h4>
                            </div>
                            <div class="full margin-top_1">
-                              <form action="" class="login_form login_signup">
+                              <form action="" class="login_form login_signup" method = "post">
+                                 {% if messages %}
+                                 <ul class="messages">
+                                 {% for message in messages %}
+                                 <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                                 {% endfor %} 
+                                 </ul>
+                                 {% endif %}
+                                  
+                                   {% csrf_token %}
                                  <fieldset>
                                     <div class="full">
                                        <div class="full field margin-top_2">
-                                          <label>Email or Phone</label>
-                                          <input type="email" name="email" required="" />
+                                          <label>User name</label>
+                                          <input type="username" name="username" required="" />
                                        </div>
                                        <div class="full field margin-top_2">
                                           <label>Password</label>
