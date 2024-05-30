@@ -142,19 +142,20 @@
             <div class="row">
                <div class="col-lg-10 offset-lg-1">
                   <div class="full">
-                     <form action="index.html" class="contact_form margin-top_7">
+                     <form action=" " method="post" class="contact_form margin-top_7">
+                        {%csrf_token%}
                         <div class="row">
                            <div class="col-lg-12">
                               <input type="text" name="name" placeholder="Name" required="" />
                            </div>
                            <div class="col-lg-6">
-                              <input type="text" name="phone_no" placeholder="Phone" required="" />
+                              <input type="text" name="Phone" placeholder="Phone" required="" />
                            </div>
                            <div class="col-lg-6">
                               <input type="email" name="email" placeholder="Email" required="" />
                            </div>
                            <div class="col-lg-12">
-                              <textarea placeholder="Message" required=""></textarea>
+                              <textarea placeholder="Message" name="message" required=""></textarea>
                            </div>
                            <div class="col-lg-12">
                               <div class="full center">

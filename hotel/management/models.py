@@ -7,3 +7,12 @@ class Sign_up(models.Model):
     password = models.CharField(max_length=100)
     confirm_password = models.CharField(max_length=100)
     username = models.CharField(max_length=100, default="")
+    
+class contactus(models.Model):
+    name = models.CharField(max_length=100)
+    Phone = models.IntegerField(default="")
+    email = models.EmailField(max_length=100)
+    message = models.CharField(max_length=100, default="")
+
+
+    
