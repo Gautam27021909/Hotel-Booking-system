@@ -780,10 +780,10 @@ a:focus {
 }
 
 .small_read_more .main_btn {
-     width: 120px;
-     height: 40px;
-     line-height: 40px;
-     font-size: 14px;
+     width: 200px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 15px;
      letter-spacing: 0.5px;
 }
 
