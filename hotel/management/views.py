@@ -1,5 +1,5 @@
 from django.shortcuts import render , redirect
-from .models import Sign_up
+from .models import Sign_up , contactus
 from django.contrib import messages
 
 def index(request):
@@ -15,6 +15,13 @@ def service(request):
     return render(request, "services.html")
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        Phone = request.POST['Phone']
+        email = request.POST['email']
+        message= request.POST['message'] 
+        z = contactus(name=name,Phone=Phone,email=email,message=message)
+        z.save()
     return render(request, "contact.html")
 
 def tc(request):
