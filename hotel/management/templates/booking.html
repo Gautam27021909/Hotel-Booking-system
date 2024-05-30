@@ -2,14 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   
-      <title>STAY HUB | About us</title>
+      <title>STAY HUB</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -21,18 +18,16 @@
       <link href= {%static "animate.css" %} rel="stylesheet">
       <link href= {%static "style.css" %} rel="stylesheet">
       <link href= {%static "responsive.css" %} rel="stylesheet">
-   
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-
    </head>
-   <body id="default_theme" class="inner_page about_page">
+   <body id="default_theme" class="inner_page booking_page">
       <header id="main_header" class="header">
          <div class="container-fluid">
             <div class="row">
                <div class="col-lg-2">
                   <div class="full logo_section">    
-                     <a href="{% url "index" %}"><img src="{%static "images/logo123.png"%}" alt="hotel Logo" class="Logo111"></a>
+                    <a href="{% url "index" %}"><img src="{%static "images/logo123.png"%}" alt="hotel Logo" class="Logo111"></a>
                   </div>
                </div>
                <div class="col-lg-7">
@@ -51,7 +46,7 @@
                               <li class="nav-item">
                                  <a class="nav-link" href={% url "index" %}>Home</a>                                
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href={% url "about" %}>About</a>
                               </li>
                               
@@ -59,10 +54,10 @@
                                  <a class="nav-link" href={% url "service" %}>Services</a>
                                  
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href={% url "room" %}>Rooms</a>
                               </li>
-                              <li class="nav-item dropdown">
+                              <li class="nav-item">
                                  <a class="nav-link" href={% url "contact" %}>Contact</a>
                               </li>
                            </ul>
@@ -76,46 +71,191 @@
                         <li><a href={% url "login" %}>Login</a></li>
                         <li><a href={% url "signup" %}>Sign up</a></li>
                      </ul>
-                     
                   </div>
                </div>
             </div>
          </div>
       </header>
+
       <section id="inner_banner" class="banner">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="full">
-                     <h2>About us</h2>
+                     <h2>Booking</h2>
                   </div>
                   <div class="full breadcrumb">
                      <ul>
                         <li><a href={% url "index" %}>Home</a></li>
                         <li><i class="fa fa-angle-double-right"></i></li>
-                        <li>About us</li>
+                        <li>Booking</li>
                      </ul>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <section id="about_section" class="section margin-top_9">
-         <div class="large_container white_bg padding-top_9 padding-bottom_9">
+
+      <section class="section padding-top_9 padding-bottom_9">
+         <div class="large_container padding-top_5 padding-bottom_5 white_bg">
             <div class="row">
                <div class="container">
                   <div class="row">
-                     <div class="col-lg-6">
-                        <div class="full">
-                           <h4 class="reveal fw_700 wow margin-top_5">Hotel Stay Hub</h4>
-                        </div>
-                        <div class="full margin-top_3">
-                           <p>Hotel Stay Hub facilities encompass a wide range of amenities and services designed to enhance the guest experience and cater to their diverse needs during their stay. These facilities typically include accommodation options such as standard rooms, suites, and specialty rooms like family rooms or executive suites, each offering varying levels of comfort and luxury to accommodate different guest preferences and budgets. Common facilities found in hotels include restaurants, bars, cafes, and room service options that provide guests with a variety of dining choices and culinary experiences. Additionally, hotels often feature fitness centers, swimming pools, spas, and wellness facilities to promote relaxation, health, and well-being among guests.</p>
-                        </div>
-                     </div>
-                     <div class="col-lg-6">  
-                        <div class="full">
-                           <img class="r-img wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s" src="{%static "images/about_us.jpg"%}" alt="#" />
+                     <div class="col-md-10 offset-md-1">
+                        <div class="full tabbar_booking">
+                           <ul class="nav nav-tabs" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" data-toggle="tab" href="#personal">Personal</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-toggle="tab" href="#business">Bussiness</a>
+                              </li>
+                           </ul>
+      
+                           <div class="tab-content">
+                              <div id="personal" class="tab-pane active">
+                                 <h4><strong>Guest Details</strong> - Sed ut perspiciatis unde omnis iste natus..</h4>
+                                 <form action="payment.html" class="booking_form">
+                                    <fieldset>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="full">
+                                                <label>Guest Name</label>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="first_name" placeholder="First Name" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="last_name" placeholder="Last Name" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="email" name="email_address" placeholder="Your Email" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="phone_no" placeholder="Phone number" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <label>Expected date to check in</label>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">Check-In</label>
+                                                <input class="input--style-1" type="text" name="checkin" placeholder="MM/DD/YYYY" id="input-start" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">Check-Out</label>
+                                                <input class="input--style-1" type="text" name="checkout" placeholder="MM/DD/YYYY" id="input-end" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">guests</label>
+                                                <div class="input-group-icon js-number-input">
+                                                   <div class="icon-con">
+                                                      <span class="plus">+</span>
+                                                      <span class="minus">-</span>
+                                                   </div>
+                                                   <input class="input--style-1 quantity" type="text" name="guests" value="1 Guests" required="" />
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                             <div class="full">
+                                                <label>Special Request</label>
+                                                <textarea></textarea>
+                                                <label class="margin-top_0 hightlight">Special requests cannot be guaranteed - but the property will try to meet your needs.</label>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <button class="margin-top_2">Pay-$1400</button>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </form>
+                              </div>
+                              <div id="business" class="tab-pane fade">
+                                 <h4><strong>Business Class</strong> - Sed ut perspiciatis unde omnis iste natus..</h4>
+                                 <form method="post" action="payment.html" id="booking_form" class="booking_form">
+                                    <fieldset>
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="full">
+                                                <label>Guest Name</label>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="first_name" placeholder="First Name" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="last_name" placeholder="Last Name" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="email" name="email_address" placeholder="Your Email" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="field full">
+                                                <input type="text" name="phone_no" placeholder="Phone number" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <label>Expected date to check in</label>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">Check-In</label>
+                                                <input class="input--style-1" type="text" name="checkin" placeholder="MM/DD/YYYY" id="input-start" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">Check-Out</label>
+                                                <input class="input--style-1" type="text" name="checkout" placeholder="MM/DD/YYYY" id="input-end" required="" />
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-4 col-sm-6">
+                                             <div class="full field">
+                                                <label class="label">guests</label>
+                                                <div class="input-group-icon js-number-input">
+                                                   <div class="icon-con">
+                                                      <span class="plus">+</span>
+                                                      <span class="minus">-</span>
+                                                   </div>
+                                                   <input class="input--style-1 quantity" type="text" name="guests" value="1 Guests" required="" />
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                             <div class="full">
+                                                <label>Special Request</label>
+                                                <textarea></textarea>
+                                                <label class="margin-top_0 hightlight">Special requests cannot be guaranteed - but the property will try to meet your needs.</label>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                             <button class="margin-top_2" type="submit">Pay-$1800</button>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </form>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -123,37 +263,61 @@
             </div>
          </div>
       </section>
-      <section class="section padding-top_9 padding-bottom_9">
+
+      <section class="section">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-lg-12">
                   <div class="full">
-                     <img class="img-responsive wow fadeInLeft" src="{%static "images/about_2.jpg"%}" data-wow-delay="0.5s" data-wow-duration="1.5s" alt="#" />
+                     <h4 class="reveal fw_700 wow margin-bottom_3">Review Your Booking</h4>
                   </div>
                </div>
                <div class="col-lg-6">
                   <div class="full">
-                     <h4 class="reveal fw_700 wow margin-top_5">Clean and Best Parking</h4>
-                  </div>
-                  <div class="full margin-top_4">
-                     <p>&emsp;Hotels that prioritize clean and top-notch parking facilities understand the importance of providing a seamless and secure experience for guests arriving by car. These establishments go above and beyond to ensure their parking areas are well-maintained, safe, and convenient, reflecting their commitment to guest satisfaction and overall quality of service. Cleanliness is a key focus, with regular cleaning schedules, litter removal, and maintenance of parking spaces to create a welcoming environment for guests. Lighting is another crucial aspect, with well-lit parking lots and pathways enhancing safety and visibility, especially during evening arrivals.</p> <br>
-                     <p>&emsp;Clear signage, designated parking spots for different types of vehicles, and accessible parking for guests with disabilities demonstrate a hotel's attention to detail and commitment to providing a hassle-free parking experience. Some hotels may offer covered parking or reserved parking for VIP guests, adding an extra layer of exclusivity and convenience.</p>
+                     <img class="img-responsive wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1.5s" src="{%static "images/04.jpg"%}" alt="#">
                   </div>
                </div>
-               <div class="col-md-12">
-                  <div class="full center margin-top_5">
-                     <a class="main_btn" href={% url "booking" %}>Book Now</a>
+               <div class="col-lg-6">
+                  <div class="full">
+                     <h4 class="reveal fw_700 wow margin-top_4">Hotel Pride Door</h4>
+                  </div>
+                  <div class="full margin-top_3">
+                     <p>
+                        <a href="#">
+                           <svg width="30px" fill="#71a4b9" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                              viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+                              <path class="st0" d="M76,6.5c-30.3,0-54.9,24.6-54.9,54.9c0,21.6,9.1,43.5,26.2,63.3c12.8,14.8,25.5,23.1,26,23.5
+                                 c0.8,0.5,1.8,0.8,2.7,0.8c0.9,0,1.9-0.3,2.7-0.8c0.5-0.3,13.2-8.7,26-23.5c17.1-19.8,26.2-41.6,26.2-63.3
+                                 C130.9,31.2,106.3,6.5,76,6.5z M76,81.8c-11.6,0-21.1-9.4-21.1-21.1S64.4,39.6,76,39.6s21.1,9.4,21.1,21.1S87.7,81.8,76,81.8z"/>
+                           </svg>
+                           <span>427 Schoen Circles Suite 124 Melbourne Australia</span>
+                        </a>
+                     </p>
+                     <p class="margin-top_2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br><br><strong>(Small Room)</strong></p>
+                  </div>
+                  <div class="full rating_star">
+                     <div class="starrating margin-top_3 risingstar float-left d-flex flex-row-reverse">
+                        <input type="radio" id="star15" name="rating" value="5" /><label for="star15" title="5 star"></label>
+                        <input type="radio" id="star14" name="rating" value="4" /><label for="star14" title="4 star"></label>
+                        <input type="radio" id="star13" name="rating" value="3" /><label for="star13" title="3 star"></label>
+                        <input type="radio" id="star12" name="rating" value="2" /><label for="star12" title="2 star"></label>
+                        <input type="radio" id="star11" name="rating" value="1" /><label for="star11" title="1 star"></label>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <section id="subscribe_section" class="section padding-top_9 padding-bottom_9 white_bg">
+ 
+      <section id="subscribe_section" class="section padding-top_9 padding-bottom_9">
          <div class="container">
             <div class="row">
                <div class="col-lg-12">
                   <div class="full">
                      <h4 class="reveal fw_700 wow">Subscribe Our Newsletter</h4>
+                  </div>
+                  <div class="full margin-top_1">
+                     <p class="light_grey_color">Use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text..</p>
                   </div>
                </div>
             </div>
@@ -171,6 +335,7 @@
             </div>
          </div>
       </section>
+
       <footer class="main_footer white_reveal_ white_fonts">
          <div class="container">
             <div class="row">
@@ -272,5 +437,4 @@
       <script src="{% static "js/jquery.nice-select.min.js" %}"></script>
       <script src="{% static "js/wow.js" %}"></script>
       <script src="{% static "js/custom.js" %}"></script>
-   </body>
 </html>
