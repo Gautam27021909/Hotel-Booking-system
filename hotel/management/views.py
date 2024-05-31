@@ -76,3 +76,6 @@ def roomdetails(request):
 
 def booking(request):
     return render(request,"booking.html")
+
+def payment(request):
+    return render(request,"payment.html")
