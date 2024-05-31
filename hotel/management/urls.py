@@ -15,5 +15,6 @@ urlpatterns = [
     path("forgot/", views.forgot, name="forgot"),  
     path("setpassword/", views.setpassword, name="setpassword"),    
     path("roomdetails/", views.roomdetails, name="roomdetails"),  
-    path("booking/", views.booking, name="booking"),   
+    path("booking/", views.booking, name="booking"), 
+    path("payment/", views.payment, name="payment"),  
 ]
