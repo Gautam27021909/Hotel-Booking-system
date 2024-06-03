@@ -13,26 +13,47 @@ def error(request):
     return render(request, "404_error.html")
 
 def about(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"about.html")
 
 def service(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request, "services.html")
 
 def contact(request):
-    if request.method == 'POST':
-        name = request.POST['name']
-        Phone = request.POST['Phone']
-        email = request.POST['email']
-        message= request.POST['message'] 
-        z = contactus(name=name,Phone=Phone,email=email,message=message)
-        z.save()
+    if request.method == "POST":
+        try:
+            EmailADD = request.POST["EmailADD"]
+            z = newsletters(EmailADD=EmailADD)
+            z.save()
+        except:
+            name = request.POST['name']
+            Phone = request.POST['Phone']
+            email = request.POST['email']
+            message= request.POST['message'] 
+            z = contactus(name=name,Phone=Phone,email=email,message=message)
+            z.save()
    
     return render(request, "contact.html")
 
 def tc(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"tc.html")
 
 def room(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"rooms.html")
 
 def login(request):
@@ -77,12 +98,24 @@ def setpassword(request):
     return render(request,"set_password.html")
 
 def roomdetails(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"room_details.html")
 
 def booking(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"booking.html")
 
 def payment(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render(request,"payment.html")
 
 def thanku(request):

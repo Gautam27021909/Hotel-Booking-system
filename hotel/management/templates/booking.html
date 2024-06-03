@@ -311,11 +311,11 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="full newsletter_form margin-top_5">
-                     <form action="index.html">
+                     <form action="" method="post">
+                        {% csrf_token %}
                         <fieldset>
-                           <input type="email" placeholder="Enter Your Email Address" name="newsletter_email" />
+                           <input type="email" placeholder="Enter Your Email Address" name="EmailADD" />
                            <button>Subscribe</button>
-                        </fieldset>
                      </form>
                   </div>
                </div>
