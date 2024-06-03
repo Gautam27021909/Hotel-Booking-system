@@ -79,3 +79,6 @@ def booking(request):
 
 def payment(request):
     return render(request,"payment.html")
+
+def thanku(request):
+    return render(request,"thanku.html")
