@@ -1,8 +1,12 @@
 from django.shortcuts import render , redirect
-from .models import Sign_up , contactus
+from .models import Sign_up , contactus , newsletters
 from django.contrib import messages
 
 def index(request):
+    if request.method == "POST":
+        EmailADD = request.POST["EmailADD"]
+        y = newsletters(EmailADD=EmailADD)
+        y.save()
     return render( request,"index.html")
 
 def error(request):
@@ -22,6 +26,7 @@ def contact(request):
         message= request.POST['message'] 
         z = contactus(name=name,Phone=Phone,email=email,message=message)
         z.save()
+   
     return render(request, "contact.html")
 
 def tc(request):

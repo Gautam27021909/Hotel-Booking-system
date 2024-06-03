@@ -14,5 +14,7 @@ class contactus(models.Model):
     email = models.EmailField(max_length=100)
     message = models.CharField(max_length=100, default="")
 
+class newsletters(models.Model):
+    EmailADD = models.EmailField(max_length=100)
 
     
