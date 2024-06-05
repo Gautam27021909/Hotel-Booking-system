@@ -16,5 +16,11 @@ class contactus(models.Model):
 
 class newsletters(models.Model):
     EmailADD = models.EmailField(max_length=100)
+    
+# class All_hotel(models.Model):
+#     photo = models.ImageField(max_length=100)
+#     location = models.CharField()
+#     room = models.CharField()
+    
 
     
