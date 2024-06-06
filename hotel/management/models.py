@@ -22,5 +22,6 @@ class newsletters(models.Model):
 #     location = models.CharField()
 #     room = models.CharField()
     
+    
 
     
