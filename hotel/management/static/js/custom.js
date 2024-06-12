@@ -147,7 +147,7 @@ $(".search_open, .search_close").toggleClass("search_open search_close");
             var map = new google.maps.Map(document.getElementById("map"), mapProp);
         }
 
-        
+
 // accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -172,3 +172,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
